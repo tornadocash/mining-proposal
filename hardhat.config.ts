@@ -1,5 +1,6 @@
 import { HardhatUserConfig, task } from "hardhat/config";
 import "@nomiclabs/hardhat-waffle";
+require("dotenv").config();
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -17,9 +18,12 @@ const config: HardhatUserConfig = {
       chainId: 1,
       forking: {
         url: process.env.ETH_RPC_MAINNET,
-        blockNumber: 12181155,
+        blockNumber: 12197930,
       },
     },
+  },
+  mocha: {
+    timeout: 600000000,
   },
 };
 
