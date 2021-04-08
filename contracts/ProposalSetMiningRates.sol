@@ -7,7 +7,7 @@ import "./interfaces/IMiner.sol";
 import "./interfaces/ITornadoProxy.sol";
 
 contract ProposalSetMiningRates is EnsResolve {
-    ITornadoProxy immutable public proxy = ITornadoProxy(0x722122dF12D4e14e13Ac3b6895a86e84145b6967);
+    ITornadoProxy immutable public proxy = ITornadoProxy(0x454d870a72e29d5E5697f635128D18077BD04C60);
     IMiner immutable public miner = IMiner(0x746Aebc06D2aE31B71ac51429A19D54E797878E9);
     
     function executeProposal() public {
