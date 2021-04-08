@@ -15,10 +15,10 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       gasPrice: 0,
-      chainId: 1,
+      chainId: 5,
       forking: {
         url: process.env.ETH_RPC,
-        blockNumber: 12197930,
+        blockNumber: 4583423,
       },
     },
     goerli: {
